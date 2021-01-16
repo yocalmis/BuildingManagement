@@ -19,22 +19,29 @@ class Yonetim extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	
-	public function __construct()
-	{
-		parent::__construct();
+    	public function __construct()
+    	{
+    		parent::__construct();
 
-		$this->load->database();
-		$this->load->helper('url');
+    		$this->load->database();
+    		$this->load->helper('url');
 
-		$this->load->library('grocery_CRUD');
-		
-		
-       if($this->session->userdata('admin_dil')==""){
-                 $this->session->set_userdata('admin_dil',"en");
+    		$this->load->library('grocery_CRUD');
+    		
+    		
+        if($this->session->userdata('admin_dil')==""){
+
+          
+
+
+           $this->session->set_userdata('admin_dil',"en");
 
 
 
-     }	
+
+
+
+       }	
 
 
 
